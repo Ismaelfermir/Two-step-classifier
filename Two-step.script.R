@@ -13,7 +13,7 @@ MD$Subtype = NA
 for (l in 1:nrow(MD)) {
   genesmu = as.vector(MD[l,])
   p = which(genesmu == 1)
-  genesmuta = genes[p]
+  genesmuta = gene[p]
   
   if (MD$MYD88[l] == 1) {MD$MCD.MYD88[l] = MD$MCD.MYD88[l] + 1}
   if (MD$PIM1[l] == 1) {MD$MCD.MYD88[l] = MD$MCD.MYD88[l] + 1}
