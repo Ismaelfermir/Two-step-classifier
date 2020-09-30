@@ -1,4 +1,4 @@
-#
+# Two-step genetic classification example
 
 MD = read.table("/path/to/example.txt", sep = "\t", header = T, row.names = T)
 gene = colnames(MD)
