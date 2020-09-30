@@ -22,12 +22,12 @@ for (l in 1:nrow(MD)) {
   if (MD$EZH2[l] == 1) {MD$EZB.BCL2[l] = MD$EZB.BCL2[l] + 1}
   if (MD$BCL2[l] == 1) {MD$EZB.BCL2[l] = MD$EZB.BCL2[l] + 1}
   if (MD$CREBBP[l] == 1) {MD$EZB.BCL2[l] = MD$EZB.BCL2[l] + 1}
-  if (is.na(MD$BCL2.tras[l]) == F && MD$BCL2.tras[l] == 1) {MD$EZB.BCL2[l] = MD$EZB.BCL2[l] + 1}
+  if (is.na(MD$BCL2.fusion[l]) == F && MD$BCL2.fusion[l] == 1) {MD$EZB.BCL2[l] = MD$EZB.BCL2[l] + 1}
   
   if (MD$NOTCH2[l] == 1) {MD$BN2.NOTCH2[l] = MD$BN2.NOTCH2[l] + 1}
   if (MD$BCL10[l] == 1) {MD$BN2.NOTCH2[l] = MD$BN2.NOTCH2[l] + 1}
   if (MD$TNFAIP3[l] == 1) {MD$BN2.NOTCH2[l] = MD$BN2.NOTCH2[l] + 1}
-  if (is.na(MD$BCL6.tras[l]) == F && MD$BCL6.tras[l] == 1) {MD$BN2.NOTCH2[l] = MD$BN2.NOTCH2[l] + 1}
+  if (is.na(MD$BCL6.fusion[l]) == F && MD$BCL6.fusion[l] == 1) {MD$BN2.NOTCH2[l] = MD$BN2.NOTCH2[l] + 1}
   
   if (MD$TET2[l] == 1) {MD$ST2.SGK1[l] = MD$ST2.SGK1[l] + 1}
   if (MD$SGK1[l] == 1) {MD$ST2.SGK1[l] = MD$ST2.SGK1[l] + 1}
