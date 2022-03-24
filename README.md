@@ -4,7 +4,7 @@ Simplified genetic classification based on those proposed by Schmitz-Wright and 
 ## Usage
 This script is made for running in R with a mutational table as the example.txt file.
 
-The columns and rows represent genes and samples, respectively. 1 indicates mutated or translocated gene in the sample and 0 indicates non-mutated or non-translocated gene.
+The columns and rows represent genes and samples, respectively. 1 indicates mutated or translocated gene in the sample and 0 indicates non-mutated or non-translocated gene. All the positions of the table/database must be completed with a 1 or a 0. If mutational data of any gene is missing, it is recommended to place a 0 in that position.
 
 ## Reference
 - Pedrosa, L. et al. Proposal and validation of a method to classify genetic subtypes of diffuse large B cell lymphoma. Scientific Reports (2020).
