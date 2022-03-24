@@ -1,6 +1,6 @@
 # Two-step genetic classification example
 
-MD = read.table("/path/to/example.txt", sep = "\t", header = T, row.names = T)
+MD = read.table("/path/to/example.txt", sep = "\t", header = T)
 gene = colnames(MD)
 subtypes = c("MCD.MYD88", "BN2.NOTCH2", "N1", "EZB.BCL2", "ST2.SGK1")
 MD$MCD.MYD88 = c(0)
@@ -83,3 +83,6 @@ for (l in 1:nrow(MD)) {
   y = which(p == 2)
   if (length(y) == 1 && is.na(MD$Subtype[l]) == T && length(y) != 2 && length(x) != 2) {MD$Subtype[l] = subtypes[y]}
 }
+
+write.table(MD, "/path/to/output/output_twostep.txt", sep = "\t", row.names = F)
+
